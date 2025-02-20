@@ -33,16 +33,18 @@ h1 {
 
 .container > div > img {
     width: 500px;
+    height: 300px; /* Set a uniform height */
+    object-fit: cover; /* Ensures the image maintains aspect ratio while filling the dimensions */
     border-radius: 20px;
     transition: transform 0.3s ease, filter 0.3s ease; 
 }
-
 
 .container > div > img:hover {
     transform: scale(1.05); /* Slightly zoom in */
     filter: brightness(1.1); 
     cursor: pointer; 
 }
+
 
 .container > div > div > .but1 {
     background-color: rgb(128, 237, 208);
